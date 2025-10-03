@@ -1,0 +1,5 @@
+# CHAMADA ESCALA DINÂMICA
+python heatmap_ds18b20_realtime.py --port COM4 --baud 115200 --alpha 0.3 --grid 80 --interval 100
+
+# CHAMADA ESCALA FIXA (INCÊNDIOS, definimos  mínimo com 15 e o máximo com 30)
+python heatmap_ds18b20_realtime.py --port COM4 --fixed 15 40

@@ -1,0 +1,167 @@
+// CLOCK
+LOCATE COMP "clk" SITE "P3";
+IOBUFFER PORT "clk" IO_TYPE = LVCMOS33;
+FREQUENCY PORT "clk" 25.0 MHz;
+
+// RESET_N
+LOCATE COMP "reset_n" SITE "H17"; // botão reset BAIXO
+IOBUFFER PORT "reset_n" IO_TYPE = LVCMOS33;
+
+// PINO DADOS DS18B20_0
+LOCATE COMP "wire_data_ds18b20_0" SITE "F4"; // PINO DE DADOS DO SENSOR
+IOBUFFER PORT "wire_data_ds18b20_0" IO_TYPE = LVCMOS33 PULLMODE=UP; 
+
+// PINO DADOS DS18B20_1
+LOCATE COMP "wire_data_ds18b20_1" SITE "E5"; // PINO DE DADOS DO SENSOR
+IOBUFFER PORT "wire_data_ds18b20_1" IO_TYPE = LVCMOS33 PULLMODE=UP; 
+
+// PINO DADOS DS18B20_2
+LOCATE COMP "wire_data_ds18b20_2" SITE "J18"; // PINO DE DADOS DO SENSOR
+IOBUFFER PORT "wire_data_ds18b20_2" IO_TYPE = LVCMOS33 PULLMODE=UP; 
+
+// PINO DADOS DS18B20_3
+LOCATE COMP "wire_data_ds18b20_3" SITE "P16"; // PINO DE DADOS DO SENSOR
+IOBUFFER PORT "wire_data_ds18b20_3" IO_TYPE = LVCMOS33 PULLMODE=UP; 
+
+// TX UART
+LOCATE COMP "tx" SITE "T1"; // SAÍDA TX UART
+IOBUFFER PORT "tx" IO_TYPE = LVCMOS33;
+
+// DISPLAY 0
+LOCATE COMP "array_display[0]" SITE "J4"; // a
+IOBUFFER PORT "array_display[0]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[1]" SITE "K5"; // b
+IOBUFFER PORT "array_display[1]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[2]" SITE "B3"; // c
+IOBUFFER PORT "array_display[2]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[3]" SITE "E19"; // d
+IOBUFFER PORT "array_display[3]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[4]" SITE "B2"; // e
+IOBUFFER PORT "array_display[4]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[5]" SITE "H5"; // f
+IOBUFFER PORT "array_display[5]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[6]" SITE "A2"; // g
+IOBUFFER PORT "array_display[6]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[7]" SITE "K4"; // ponto
+IOBUFFER PORT "array_display[7]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[8]" SITE "H3"; // digito1
+IOBUFFER PORT "array_display[8]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[9]" SITE "K3"; // digito2
+IOBUFFER PORT "array_display[9]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[10]" SITE "J5"; // digito3
+IOBUFFER PORT "array_display[10]" IO_TYPE = LVCMOS33;
+
+
+// DISPLAY 1
+LOCATE COMP "array_display[11]" SITE "C1"; // a
+IOBUFFER PORT "array_display[11]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[12]" SITE "E1"; // b
+IOBUFFER PORT "array_display[12]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[13]" SITE "E4"; // c
+IOBUFFER PORT "array_display[13]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[14]" SITE "F3"; // d
+IOBUFFER PORT "array_display[14]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[15]" SITE "H4"; // e
+IOBUFFER PORT "array_display[15]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[16]" SITE "E2"; // f
+IOBUFFER PORT "array_display[16]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[17]" SITE "F1"; // g
+IOBUFFER PORT "array_display[17]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[18]" SITE "G3"; // ponto
+IOBUFFER PORT "array_display[18]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[19]" SITE "D2"; // digito1
+IOBUFFER PORT "array_display[19]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[20]" SITE "D1"; // digito2
+IOBUFFER PORT "array_display[20]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[21]" SITE "F2"; // digito3
+IOBUFFER PORT "array_display[21]" IO_TYPE = LVCMOS33;
+
+
+// DISPLAY 2
+LOCATE COMP "array_display[22]" SITE "A18"; // a
+IOBUFFER PORT "array_display[22]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[23]" SITE "C3"; // b
+IOBUFFER PORT "array_display[23]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[24]" SITE "A3"; // c
+IOBUFFER PORT "array_display[24]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[25]" SITE "B1"; // d
+IOBUFFER PORT "array_display[25]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[26]" SITE "C2"; // e
+IOBUFFER PORT "array_display[26]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[27]" SITE "C17"; // f
+IOBUFFER PORT "array_display[27]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[28]" SITE "B4"; // g
+IOBUFFER PORT "array_display[28]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[29]" SITE "E3"; // ponto
+IOBUFFER PORT "array_display[29]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[30]" SITE "B18"; // digito1
+IOBUFFER PORT "array_display[30]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[31]" SITE "C4"; // digito2
+IOBUFFER PORT "array_display[31]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[32]" SITE "D3"; // digito3
+IOBUFFER PORT "array_display[32]" IO_TYPE = LVCMOS33;
+
+
+// DISPLAY 3
+LOCATE COMP "array_display[33]" SITE "M18"; // a
+IOBUFFER PORT "array_display[33]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[34]" SITE "J20"; // b
+IOBUFFER PORT "array_display[34]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[35]" SITE "F20"; // c
+IOBUFFER PORT "array_display[35]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[36]" SITE "B20"; // d
+IOBUFFER PORT "array_display[36]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[37]" SITE "A19"; // e
+IOBUFFER PORT "array_display[37]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[38]" SITE "K20"; // f
+IOBUFFER PORT "array_display[38]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[39]" SITE "D20"; // g
+IOBUFFER PORT "array_display[39]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[40]" SITE "B19"; // ponto
+IOBUFFER PORT "array_display[40]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[41]" SITE "L20"; // digito1
+IOBUFFER PORT "array_display[41]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[42]" SITE "L18"; // digito2
+IOBUFFER PORT "array_display[42]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "array_display[43]" SITE "G20"; // digito3
+IOBUFFER PORT "array_display[43]" IO_TYPE = LVCMOS33;

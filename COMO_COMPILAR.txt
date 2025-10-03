@@ -1,0 +1,12 @@
+# Para compilar faça no OSS_CAD_SUIT OS COMANDOS
+
+# DICA: Copie todos os arquivos para o mesmo diretório e abra o OSS CAD SUITE nessa página para facilitar e digite os seguintes comandos:
+
+1 yosys -p "read_verilog clk_div.v decoder_digito_display.v display_3digitos.v divisor_clock.v ds18b20.v ds18b20_simple.v temp_demo.v temp_rd.v top_module.v; synth_ecp5 -json out.json -abc9"
+
+2 nextpnr-ecp5 --json out.json --lpf top_module.lpf --textcfg out.config --package CABGA381 --45k --speed 6
+
+3 ecppack --compress --input out.config --bit out.bit 
+
+4 (COM FPGA CONECTADA NO PC) openFPGALoader -b colorlight-i9 out.bit
+

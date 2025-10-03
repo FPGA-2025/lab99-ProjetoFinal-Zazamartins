@@ -1,7 +1,3 @@
-# L99-ProjetoFinal
-
-1) Substitua o título pelo título do seu projeto
-2) Inclua seu nome completo
-3) Inclua um resumo do que foi feito e o que não foi feito
-4) Inclua os comandos necessários para replicar seus resultados. Não deixe de indicar a pinagem da placa.
-
+# Monitoramento Térmico Setorizado com FPGA
+1 Siga as instruções do COMO_COMPILAR.txt
+2 Todas as informações sobre o projeto estão detalhadamente explicadas em projeto_final_2fase_FPGA
